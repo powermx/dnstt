@@ -23,7 +23,7 @@ rm -rf install; apt update; wget https://github.com/powermx/dnstt/raw/main/insta
 ```
  
 
-## :octocat: Credits
+## Credits
 
 1. [@LaelsonCG )
 2. @khaledagn
