@@ -1,0 +1,2 @@
+# dnstt
+SlowDNS (dnstt)
