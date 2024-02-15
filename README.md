@@ -27,3 +27,5 @@ rm -rf install; apt update; wget https://github.com/powermx/dnstt/raw/main/insta
 
 1. [@LaelsonCG )
 2. @khaledagn
+
+> Telegram : https://t.me/vpnmx
