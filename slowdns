@@ -1,33 +1,43 @@
 #!/bin/bash
+# Definir variables para colores de texto
+RED='\033[1;31m'
+GREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[1;34m'
+PURPLE='\033[1;35m'
+CYAN='\033[1;36m'
+GRAY='\033[1;37m'
+WHITE='\033[1;37m'
+# Definir variables para colores de fondo
+BG_RED='\033[0;41m'
+BG_GREEN='\033[0;42m'
+BG_YELLOW='\033[0;43m'
+BG_BLUE='\033[0;44m'
+BG_PURPLE='\033[0;45m'
+BG_CYAN='\033[0;46m'
+BG_GRAY='\033[0;47m'
+# Resetear colores
+RESET='\033[0m'
 clear
 slowdns () {
-echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "SLOWDNS MANAGER MENU V3.1 (ENGLISH)" ; tput sgr0
-echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
-echo -e "\033[0;36m#===================================================#\033[m"
-echo -e "\033[0;36m# .|'''.|'||                '||''|. '|.   '|'.|'''.|#\033[m"
-echo -e "\033[0;36m# ||..  ' ||  ... ... ... ...||   || |'|   | ||..  '#\033[m"
-echo -e "\033[0;36m#  ''|||. ||.|  '|.||  ||  | ||    ||| '|. |  ''|||.#\033[m"
-echo -e "\033[0;36m#.     '||||||   || ||| |||  ||    |||   |||.     '|#\033[m"
-echo -e "\033[0;36m#|'....|'.||.'|..|'  |   |  .||...|'.|.   '||'....|'#\033[m"
-echo -e "\033[0;36m#---------------------------------------------------#\033[m"
-echo -e "\033[0;36m#\033[m \033[0;31mDEVELOPED BY @LAAEL | MOD VPSPACK\033[m \033[0;36m#\033[m"
-echo -e "\033[0;36m#===================================================#\033[m"
+echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${YELLOW}"
+figlet -p -f slant SlowDNS
+echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────── SlowDNS ──────────────── ${YELLOW}"
     echo ""
-    echo -e "\033[0;36m[01]\033[m | Install SlowDNS SSH"
-    echo -e "\033[0;36m[02]\033[m | Install SlowDNS SSL"
-    echo -e "\033[0;36m[03]\033[m | Install SlowDNS DROPBEAR"
-    echo -e "\033[0;36m[04]\033[m | Install SlowDNS SOCKS"
-    echo -e "\033[0;36m[05]\033[m | See information"
-    echo -e "\033[0;36m[06]\033[m | Start SlowDNS"
-    echo -e "\033[0;36m[07]\033[m | RESTART SlowDNS"
-    echo -e "\033[0;36m[08]\033[m | STOP SlowDNS"
-    echo -e "\033[0;36m[09]\033[m | Remove SlowDNS"
-    echo -e "\033[0;36m[10]\033[m | Update/Reinstall"
-    echo -e "\033[0;36m[11]\033[m | Remove Script"
-    echo -e "\033[0;36m[00]\033[m | EXIT"
+    echo -e "${YELLOW}[${GREEN}01${YELLOW}]${WHITE} | Install SlowDNS SSH"
+    echo -e "${YELLOW}[${GREEN}02${YELLOW}]${WHITE} | Install SlowDNS SSL"
+    echo -e "${YELLOW}[${GREEN}03${YELLOW}]${WHITE} | Install SlowDNS DROPBEAR"
+    echo -e "${YELLOW}[${GREEN}04${YELLOW}]${WHITE} | Install SlowDNS SOCKS"
+    echo -e "${YELLOW}[${GREEN}05${YELLOW}]${WHITE} | See information"
+    echo -e "${YELLOW}[${GREEN}06${YELLOW}]${WHITE} | Start SlowDNS"
+    echo -e "${YELLOW}[${GREEN}07${YELLOW}]${WHITE} | RESTART SlowDNS"
+    echo -e "${YELLOW}[${GREEN}08${YELLOW}]${WHITE} | STOP SlowDNS"
+    echo -e "${YELLOW}[${GREEN}09${YELLOW}]${WHITE} | Remove SlowDNS"
+    echo -e "${YELLOW}[${GREEN}10${YELLOW}]${WHITE} | Update/Reinstall"
+    echo -e "${YELLOW}[${GREEN}11${YELLOW}]${WHITE} | Remove Script"
+    echo -e "${YELLOW}[${GREEN}00${YELLOW}]${WHITE} | EXIT"
     echo ""
-    echo -ne "\033[0;36mWhat do you want to do?:\0033[m " && read option
+    echo -ne "${YELLOW}What do you want to do?:\0033[m " && read option
     case $option in
     1) Option1 ;;
     2) Option2 ;;
@@ -113,3 +123,4 @@ Sair() {
 }
 clear
 slowdns
+
