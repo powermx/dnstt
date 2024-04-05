@@ -62,13 +62,7 @@ apt update && apt upgrade -y
 fun_bar 'fun_att'
 echo -e "INSTALLING AND UPDATING NECESSARY PACKAGES..."
 install_pkgs () {
-apt install screen -y
-apt install cron -y
 apt install iptables -y
-service cron reload
-service cron restart
-service iptables reload
-service iptables restart
 }
 fun_bar 'install_pkgs'
 echo -e "CONFIGURING IPTABLES..."
