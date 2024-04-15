@@ -23,7 +23,13 @@ slowdns () {
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${YELLOW}"
 figlet -p -f slant SlowDNS
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────── SlowDNS ──────────────── ${YELLOW}"
-    echo ""
+    archivo="/root/server.pub"
+    if [ -e "$archivo" ]; then
+        echo -ne "${YELLOW}YOUR NS: ${WHITE} " && cat /etc/slowdns/infons
+        echo -ne "${YELLOW}YOUR PUBLIC KEY:\033[0m " && cat /root/server.pub
+    else
+        echo ""
+    fi
     echo -e "${YELLOW}[${GREEN}01${YELLOW}]${WHITE} | Install SlowDNS SSH"
     echo -e "${YELLOW}[${GREEN}02${YELLOW}]${WHITE} | Install SlowDNS SSL"
     echo -e "${YELLOW}[${GREEN}03${YELLOW}]${WHITE} | Install SlowDNS DROPBEAR"
