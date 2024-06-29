@@ -126,7 +126,7 @@ Option11 () {
 
 Sair() {
     clear
-    exit
+    vpspack
 }
 clear
 slowdns
