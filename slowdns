@@ -22,7 +22,9 @@ clear
 slowdns () {
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${YELLOW}"
 figlet -p -f slant SlowDNS
-echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────── SlowDNS ──────────────── ${YELLOW}"
+echo -e "${GRAY}[${RED}-${GRAY}]${RED} ────────── Mod SlowDNS VpsPack ───────── ${YELLOW}"
+echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──          Telegram: @VPNMX          ── ${YELLOW}"
+echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──              @PowerMX              ── ${YELLOW}"
     archivo="/root/server.pub"
     if [ -e "$archivo" ]; then
         echo -ne "${YELLOW}YOUR NS: ${WHITE} " && cat /etc/slowdns/infons
