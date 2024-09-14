@@ -71,7 +71,6 @@ echo -ne "\033[1;32m ENTER YOUR NS (NAMESERVER)\033[1;37m: "; read nameserver
 cd /etc/slowdns
 touch infons
 echo $nameserver > infons
-set_ns () {
 sleep 1
 cd /etc/slowdns
 echo ""
@@ -96,6 +95,7 @@ screen -dmS slowdns$customservice /etc/slowdns/dns-server -udp :5300 -privkey-fi
 echo ""
 echo "SlowDNS Successfully Restarted! [✔]"
 EOF
+set_ns () {
 chmod +x /etc/slowdns/startdns
 chmod +x /etc/slowdns/restartdns
 cp startdns /bin/
