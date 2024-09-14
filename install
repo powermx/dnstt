@@ -68,6 +68,7 @@ wget https://raw.githubusercontent.com/powermx/dnstt/main/slowdns-drop; chmod +x
 wget https://raw.githubusercontent.com/powermx/dnstt/main/slowdns-ssh; chmod +x slowdns-ssh
 wget https://raw.githubusercontent.com/powermx/dnstt/main/slowdns-ssl; chmod +x slowdns-ssl
 wget https://raw.githubusercontent.com/powermx/dnstt/main/slowdns-socks; chmod +x slowdns-socks
+wget https://raw.githubusercontent.com/powermx/dnstt/main/slowdns-customservice; chmod +x slowdns-customservice
 wget https://raw.githubusercontent.com/powermx/dnstt/main/slowdns; chmod +x slowdns; cp slowdns /bin/
 wget https://raw.githubusercontent.com/powermx/dnstt/main/stopdns; chmod +x stopdns
 }
