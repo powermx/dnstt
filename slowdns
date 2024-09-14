@@ -86,7 +86,7 @@ Option4 () {
 
 Option5 () {
     clear
-    bash /etc/slowdns/customservice
+    bash /etc/slowdns/slowdns-customservice
 }
 
 
