@@ -14,7 +14,7 @@ THIS IS A SCRIPT FOR AUTO INSTALLATION OF SLOWDNS (DNSTT SERVER) WITH:
 
 * A Linux-based operating system (Ubuntu) 
 * Ubuntu 20.04 Server x86_64 / 18.04 Server x86_64
-* Version 8.5 Preffered Ubuntu 20.04 Server x86_64
+* Preffered Ubuntu 20.04 Server x86_64
 * It is recommended to use a new or formatted distro
 
 # Installation
@@ -26,7 +26,7 @@ rm -rf install; apt update; wget https://github.com/powermx/dnstt/raw/main/insta
 
 ## Credits
 
-1. [@LaelsonCG )
-2. @khaledagn
+1. @LaelsonCG - Main
+2. @khaledagn - Mod 1
 
 > Telegram : https://t.me/vpnmx
