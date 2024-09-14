@@ -28,20 +28,21 @@ echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────�
         echo -ne "${YELLOW}YOUR NS: ${WHITE} " && cat /etc/slowdns/infons
         echo -ne "${YELLOW}YOUR PUBLIC KEY:\033[0m " && cat /root/server.pub
     else
-        echo "Menu"
+        echo "Not Installed"
     fi
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${YELLOW}"
     echo -e "${YELLOW}[${GREEN}01${YELLOW}]${WHITE} | Install SlowDNS SSH"
     echo -e "${YELLOW}[${GREEN}02${YELLOW}]${WHITE} | Install SlowDNS SSL"
     echo -e "${YELLOW}[${GREEN}03${YELLOW}]${WHITE} | Install SlowDNS DROPBEAR"
     echo -e "${YELLOW}[${GREEN}04${YELLOW}]${WHITE} | Install SlowDNS SOCKS"
-    echo -e "${YELLOW}[${GREEN}05${YELLOW}]${WHITE} | See information"
-    echo -e "${YELLOW}[${GREEN}06${YELLOW}]${WHITE} | Start SlowDNS"
-    echo -e "${YELLOW}[${GREEN}07${YELLOW}]${WHITE} | RESTART SlowDNS"
-    echo -e "${YELLOW}[${GREEN}08${YELLOW}]${WHITE} | STOP SlowDNS"
-    echo -e "${YELLOW}[${GREEN}09${YELLOW}]${WHITE} | Remove SlowDNS"
-    echo -e "${YELLOW}[${GREEN}10${YELLOW}]${WHITE} | Update/Reinstall"
-    echo -e "${YELLOW}[${GREEN}11${YELLOW}]${WHITE} | Remove Script"
+    echo -e "${YELLOW}[${GREEN}05${YELLOW}]${WHITE} | Install SlowDNS Custom Service"
+    echo -e "${YELLOW}[${GREEN}06${YELLOW}]${WHITE} | See information"
+    echo -e "${YELLOW}[${GREEN}07${YELLOW}]${WHITE} | Start SlowDNS"
+    echo -e "${YELLOW}[${GREEN}08${YELLOW}]${WHITE} | RESTART SlowDNS"
+    echo -e "${YELLOW}[${GREEN}09${YELLOW}]${WHITE} | STOP SlowDNS"
+    echo -e "${YELLOW}[${GREEN}10${YELLOW}]${WHITE} | Remove SlowDNS"
+    echo -e "${YELLOW}[${GREEN}11${YELLOW}]${WHITE} | Update/Reinstall"
+    echo -e "${YELLOW}[${GREEN}12${YELLOW}]${WHITE} | Remove Script"
     echo -e "${YELLOW}[${GREEN}00${YELLOW}]${WHITE} | EXIT"
     echo ""
     echo -ne "${YELLOW}What do you want to do?:\0033[m " && read option
@@ -57,6 +58,7 @@ echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────�
     9) Option9 ;;
     10) Option10 ;;
     11) Option11 ;;
+    12) Option12 ;;
     0) Sair ;;
     *) "Invalid option" ; echo ; slowdns ;;
     esac
@@ -82,41 +84,46 @@ Option4 () {
     bash /etc/slowdns/slowdns-socks
 }
 
-
 Option5 () {
+    clear
+    bash /etc/slowdns/customservice
+}
+
+
+Option6 () {
     clear
     bash /etc/slowdns/slowdns-info
 }
 
-Option6 () {
+Option7 () {
     clear
     bash /etc/slowdns/startdns
 }
 
-Option7 () {
+Option8 () {
     clear
     bash /etc/slowdns/restartdns
 }
 
-Option8 () {
+Option9 () {
     clear
     bash /etc/slowdns/stopdns
 }
 
-Option9 () {
+Option10 () {
      clear
     bash /etc/slowdns/stopdns
     bash /etc/slowdns/remove-slow
 }
 
-Option10 () {
+Option11 () {
     clear
     wget https://raw.githubusercontent.com/powermx/dnstt/main/update
     chmod +x update
     bash update
 }
 
-Option11 () {
+Option12 () {
      clear
     bash /etc/slowdns/remove-slow
     echo -e "\033[0;31mSlowDNS Manager Uninstalled!\033[0m"
