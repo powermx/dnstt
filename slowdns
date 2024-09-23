@@ -19,8 +19,8 @@ BG_CYAN='\033[0;46m'
 BG_GRAY='\033[0;47m'
 # Resetear colores
 RESET='\033[0m'
-tput reset
 slowdns () {
+tput reset
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${YELLOW}"
 figlet -p -f slant SlowDNS
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ────────── Mod SlowDNS VpsPack ───────── ${YELLOW}"
