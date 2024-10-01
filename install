@@ -42,7 +42,7 @@ while true; do
    tput dl1
    echo -e "${YELLOW}WAIT -"
 done
-echo -e "${GREEN}OK \!"
+printf "${GREEN}OK !\n"
 tput cnorm
 }
 clear
@@ -97,6 +97,4 @@ echo ""
 echo -e "To open the menu, use the command: ${RED}slowdns${RESET}"
 cd
 sleep 3
-printf "\033[1;31mPRESS ENTER TO CONTINUE\033[0m\n"
-read -p " "
 slowdns
