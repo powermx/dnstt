@@ -1,7 +1,7 @@
 #!/bin/bash
 #SlowDNS @PowerMX
 # Definir variables para colores de texto
-IP=$(curl -4 icanhazip.com);
+IP=$(curl -s -4 icanhazip.com)
 HOST=`hostname`;
 RED='\033[1;31m'
 GREEN='\033[1;32m'
