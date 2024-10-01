@@ -75,16 +75,19 @@ echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────�
 Option1 () {
     clear
     bash /etc/slowdns/slowdns-ssh
+    slowdns
 }
 
 Option2 () {
     clear
     bash /etc/slowdns/slowdns-ssl
+    slowdns
 }
 
 Option3 () {
     clear
     bash /etc/slowdns/slowdns-drop
+    slowdns
 }
 
 Option4 () {
@@ -95,6 +98,7 @@ Option4 () {
 Option5 () {
     clear
     bash /etc/slowdns/slowdns-customservice
+    slowdns
 }
 
 
