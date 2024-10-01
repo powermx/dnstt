@@ -28,9 +28,9 @@ figlet -p -f slant SlowDNS
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ────────── Mod SlowDNS VpsPack ───────── ${YELLOW}"
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──          Telegram: @VPNMX          ── ${YELLOW}"
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──              @PowerMX              ── ${YELLOW}"
-echo -ne "${YELLOW}SERVER IP: ${WHITE}$IP\033[0m "
-echo -ne "${YELLOW}HOSTNAME: ${WHITE}$HOST\033[0m "
-    archivo="/root/server.pub"
+echo -e "${YELLOW}SERVER IP: ${WHITE}$IP\033[0m "
+echo -e "${YELLOW}HOSTNAME: ${WHITE}$HOST\033[0m "
+    archivo="/etc/slowdns/infons"
     if [ -e "$archivo" ]; then
         echo -ne "${YELLOW}YOUR NS: ${WHITE} " && cat /etc/slowdns/infons
         echo -ne "${YELLOW}YOUR PUBLIC KEY:\033[0m " && cat /root/server.pub
