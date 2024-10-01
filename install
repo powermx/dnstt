@@ -42,7 +42,7 @@ while true; do
    tput dl1
    echo -e "${YELLOW}WAIT -"
 done
-printf "${GREEN}OK !\n"
+printf "${GREEN} OK !"
 tput cnorm
 }
 clear
