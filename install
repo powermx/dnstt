@@ -51,7 +51,7 @@ figlet -p -f slant SlowDNS
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ────────────── Installer ─────────────── ${YELLOW}"
 echo -e ""
 echo -e "      This script will do the installation"
-echo -e "       manager for SlowDNS connection mode."
+echo -e "      for SlowDNS connection mode."
 echo -e ""
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${YELLOW}"
 echo ""
