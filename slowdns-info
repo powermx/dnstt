@@ -29,6 +29,6 @@ echo ""
 echo -e "${YELLOW}YOUR KEY is saved in the file /root/server.pub\033[0m"
 echo -e "${YELLOW}Keep it in a safe place, you may need it in the future!${YELLOW}"
 echo ""
-echo -e "\033[1;33m › PRESIONE ENTER PARA CONTINUAR\033[0m"
+echo -e "\033[1;33m › PRESS ENTER TO CONTINUE\033[0m"
 read -p " "
 slowdns
