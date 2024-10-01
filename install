@@ -29,7 +29,7 @@ ${comando[1]} -y > /dev/null 2>&1
 touch $HOME/fim
  ) > /dev/null 2>&1 &
  tput civis
-echo -e "${YELLOW}WAIT -"
+echo -ne "${YELLOW}WAIT -"
 while true; do
    for((i=0; i<18; i++)); do
    echo -ne "\033[1;31m#"
