@@ -106,22 +106,34 @@ Option6 () {
 Option7 () {
     clear
     bash /etc/slowdns/startdns
+    echo -e "\033[1;33m › PRESS ENTER TO CONTINUE\033[0m"
+    read -p " "
+    slowdns
 }
 
 Option8 () {
     clear
     bash /etc/slowdns/restartdns
+    echo -e "\033[1;33m › PRESS ENTER TO CONTINUE\033[0m"
+    read -p " "
+    slowdns
 }
 
 Option9 () {
     clear
     bash /etc/slowdns/stopdns
+    echo -e "\033[1;33m › PRESS ENTER TO CONTINUE\033[0m"
+    read -p " "
+    slowdns
 }
 
 Option10 () {
      clear
     bash /etc/slowdns/stopdns
     bash /etc/slowdns/remove-slow
+    echo -e "\033[1;33m › PRESS ENTER TO CONTINUE\033[0m"
+    read -p " "
+    menu
 }
 
 Option11 () {
