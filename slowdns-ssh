@@ -151,7 +151,6 @@ echo -e "${YELLOW}YOUR KEY is saved in the file /root/server.pub\033[0m"
 echo -e "${YELLOW}Keep it in a safe place, you may need it in the future!${YELLOW}"
 echo ""
 read -p "Press [Enter] to return to the menu or CTRL+C to exit"
-slowdns
 }
 Option2 () {
 cd
@@ -181,7 +180,6 @@ echo -e "${YELLOW}YOUR KEY is saved in the file /root/server.pub\033[0m"
 echo -e "${YELLOW}Keep it in a safe place, you may need it in the future!${YELLOW}"
 echo ""
 read -p "Press [Enter] to return to the menu or CTRL+C to exit"
-slowdns
 }
 Option3 () {
 echo -e "Downloading default key pair..."
@@ -215,7 +213,6 @@ echo -e "${YELLOW}YOUR KEY is saved in the file /root/server.pub\033[0m"
 echo -e "${YELLOW}Keep it in a safe place, you may need it in the future!${YELLOW}"
 echo ""
 read -p "Press [Enter] to return to the menu or CTRL+C to exit"
-slowdns
 }
 OptionX () {
 exit
@@ -265,7 +262,6 @@ echo -e "${YELLOW}YOUR KEY is saved in the file /root/server.pub\033[0m"
 echo -e "${YELLOW}Keep it in a safe place, you may need it in the future!${YELLOW}"
 echo ""
 read -p "Press [Enter] to return to the menu or CTRL+C to exit"
-slowdns
 }
 opc_key2 () {
 echo -e "Downloading default key pair..."
@@ -298,7 +294,6 @@ echo -e "${YELLOW}YOUR KEY is saved in the file /root/server.pub\033[0m"
 echo -e "${YELLOW}Keep it in a safe place, you may need it in the future!${YELLOW}"
 echo ""
 read -p "Press [Enter] to return to the menu or CTRL+C to exit"
-slowdns
 }
 opc_keyx () {
 echo "Aborting installation"
