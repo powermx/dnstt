@@ -1,6 +1,8 @@
 #!/bin/bash
 #SlowDNS @PowerMX
 # Definir variables para colores de texto
+IP=$(curl -4 icanhazip.com);
+HOST=`hostname`;
 RED='\033[1;31m'
 GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
@@ -26,6 +28,8 @@ figlet -p -f slant SlowDNS
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ────────── Mod SlowDNS VpsPack ───────── ${YELLOW}"
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──          Telegram: @VPNMX          ── ${YELLOW}"
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──              @PowerMX              ── ${YELLOW}"
+echo -ne "${YELLOW}SERVER IP: ${WHITE}$IP\033[0m "
+echo -ne "${YELLOW}HOSTNAME: ${WHITE}$HOST\033[0m "
     archivo="/root/server.pub"
     if [ -e "$archivo" ]; then
         echo -ne "${YELLOW}YOUR NS: ${WHITE} " && cat /etc/slowdns/infons
