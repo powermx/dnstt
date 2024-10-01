@@ -49,3 +49,6 @@ fun_bar 'fun_revdns'
 echo ""
 echo -e "SlowDNS Removed Successfully!"
 rm -rf /etc/slowdns
+echo -e "\033[1;31mPRESS ENTER TO CONTINUE\033[0m"
+read -p " "
+menu
