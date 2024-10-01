@@ -28,6 +28,7 @@ figlet -p -f slant SlowDNS
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ────────── Mod SlowDNS VpsPack ───────── ${YELLOW}"
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──          Telegram: @VPNMX          ── ${YELLOW}"
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──              @PowerMX              ── ${YELLOW}"
+echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${RESET}"
 echo -e "${YELLOW}SERVER IP: ${WHITE}$IP\033[0m "
 echo -e "${YELLOW}HOSTNAME: ${WHITE}$HOST\033[0m "
 archivo="/etc/slowdns/infons"
