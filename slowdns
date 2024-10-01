@@ -30,13 +30,13 @@ echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──          Telegram: @VPNMX         
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──              @PowerMX              ── ${YELLOW}"
 echo -e "${YELLOW}SERVER IP: ${WHITE}$IP\033[0m "
 echo -e "${YELLOW}HOSTNAME: ${WHITE}$HOST\033[0m "
-    archivo="/etc/slowdns/infons"
-    if [ -e "$archivo" ]; then
-        echo -ne "${YELLOW}YOUR NS: ${WHITE} " && cat /etc/slowdns/infons
-        echo -ne "${YELLOW}YOUR PUBLIC KEY:\033[0m " && cat /root/server.pub
-    else
-        echo "Not Installed"
-    fi
+archivo="/etc/slowdns/infons"
+if [ -e "$archivo" ]; then
+    echo -ne "${YELLOW}YOUR NS: ${WHITE} " && cat /etc/slowdns/infons
+    echo -ne "${YELLOW}YOUR PUBLIC KEY:\033[0m " && cat /root/server.pub
+else
+    echo -e "${RED}Not Installed\033[0m"
+fi
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${YELLOW}"
     echo -e "${YELLOW}[${GREEN}01${YELLOW}]${WHITE} | Install SlowDNS SSH"
     echo -e "${YELLOW}[${GREEN}02${YELLOW}]${WHITE} | Install SlowDNS SSL"
