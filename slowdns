@@ -135,13 +135,15 @@ Option12 () {
      clear
     bash /etc/slowdns/remove-slow
     echo -e "\033[0;31mSlowDNS Manager Uninstalled!\033[0m"
-    sleep 2
+    sleep 3
     rm /bin/slowdns
+    echo -e "\033[1;33m › PRESS ENTER TO CONTINUE\033[0m"
+    read -p " "
+    menu
 }
 
 Sair() {
     clear
-    vpspack
 }
 clear
 slowdns
