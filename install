@@ -96,7 +96,7 @@ echo -e "          \033[1;33mINSTALLATION COMPLETED!\033[0m          "
 echo ""
 echo -e "To open the menu, use the command: ${RED}slowdns${RESET}"
 cd
-rm install 1> /dev/null 2> /dev/null
+sleep 3
 echo -e "\033[1;31mPRESS ENTER TO CONTINUE\033[0m"
 read -p " "
 slowdns
