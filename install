@@ -92,7 +92,7 @@ echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────�
 figlet -p -f slant SlowDNS
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ────────────── Installer ─────────────── ${YELLOW}"
 echo ""
-echo -e "          \033[1;33mINSTALLATION COMPLETED!\033[0m          "
+echo -e "          \033[1;33mINSTALLATION COMPLETED ${RESET}        "
 echo ""
 echo -e "To open the menu, use the command: ${RED}slowdns${RESET}"
 cd
