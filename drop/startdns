@@ -37,3 +37,6 @@ fun_bar 'fun_start'
 echo ""
 echo "       SLOWDNS STARTED SUCCESSFULLY!!!"
 sleep 2
+echo -e "\033[1;33m › PRESS ENTER TO CONTINUE\033[0m"
+read -p " "
+slowdns
