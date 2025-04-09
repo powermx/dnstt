@@ -57,7 +57,7 @@ echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────�
 echo ""
 echo -e "UPDATING PACKAGE LIST..."
 fun_att () {
-apt update && apt upgrade -y
+apt update
 }
 fun_bar 'fun_att'
 echo -e "INSTALLING AND UPDATING NECESSARY PACKAGES..."
